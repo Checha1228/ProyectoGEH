@@ -1,0 +1,75 @@
+//-Layout Base
+extends ../templates/base.pug
+
+//-Etiqueta Title
+block title
+	title Proyecto GEH
+
+//-Etiqueta Metadescription
+block description
+	meta(name="description", content="Frontend BRM" )
+
+
+block content
+	section.container-fluid
+		div.row
+			div.conte-titulos
+				h1|Paso 1
+				p|Subir</br> una imagen
+				div.clear
+
+			div.conte-drag-img
+				button.btn-agregar(type='button') 
+					i.iconos.mas
+					|Añadir imagen
+				p|O ARASTRA LA IMAGEN
+
+			hr
+
+	section.container-fluid
+		div.row
+			div.conte-titulos
+				h1|Paso 2
+				p|Selecciona</br>  el lugar de la foto.
+				div.clear
+
+			div.conte-botones-destinos
+				button(type='button') Manizales
+				button(type='button') San Jose de Albán
+				button(type='button') Bucaramanga
+				button(type='button') Medellín
+				button(type='button') Magdalena
+				button(type='button') Bolivar
+				button(type='button') Salento
+				button(type='button') Santa Rosa
+
+			hr
+
+	section.container-fluid
+		div.row
+			div.conte-titulos
+				h1|Paso 3
+				p|localización</br> de la imagen.
+				div.clear
+
+			div.cont-titulo-destino
+				h2|Destino:
+				p|Manizales
+				div.clear
+
+				div.cont-iframe
+					iframe( height='574', src='https://www.youtube.com/embed/-tVWt2RDsoM', frameborder='0', allowfullscreen='')
+
+				button.btn-reiniciar(type='button')
+					i.iconos.reinicia
+					|Reiniciar
+
+					
+
+block Scripts
+	//-Acá se ponen js que solo vayan en ésta página
+	script(src="js/libs/jquery.js")
+	script(src="js/app.js")
+	script(async,defer,src="https://apis.google.com/js/api.js" onload="this.onload=function(){};handleClientLoad()" onreadystatechange="if (this.readyState === 'complete') this.onload()")
+
+

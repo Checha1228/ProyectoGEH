@@ -1,0 +1,27 @@
+//Nib & gradient support
+@require 'nib'
+//Esto hace que exporte los estilos css3 con soporte para todos los navegadores
+vendor-prefixes = o ms webkit moz official
+
+//Bootstrap v 3.3.7
+@import 'bootstrap.config'
+
+
+//Variables y funciones, se deben declarar primero que el resto de archivos para poderlos utilizar
+@import "modules/variables"
+@import "modules/funciones"
+
+//Layout
+@import "modules/base"
+@import "modules/layout"
+@import "modules/buttons"
+@import "modules/fonts"
+@import "modules/styles-CNG"
+@import "modules/responsive"
+@import "modules/footer"
+
+
+// @import "modules/utilities"
+// @import "modules/animations"
+// @import "modules/keyframes"
+// @import "modules/media-queries"
